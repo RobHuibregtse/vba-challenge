@@ -6,6 +6,7 @@ Stock Calculater V1.0 by Rob Huibregtse
 Macros: 
 
 calc_current_sheet:
+
   Calculates the following values on the currently active Excel sheet:
 - For all stock tickers:
   - Quarterly change
@@ -17,4 +18,5 @@ calc_current_sheet:
   - Ticker with the highest quarterly total volume
  
 calc_all_sheets <--- Grade this one!
+
   Runs calc_current_sheet on all sheets in the worksheet at once
