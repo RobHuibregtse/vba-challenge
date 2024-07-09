@@ -1,7 +1,7 @@
 Attribute VB_Name = "Module11"
 Sub calc_all_sheets()
 
-'Declate current sheet variable
+'Declare current sheet variable
 Dim currentsheet As Worksheet
 
 'Loop through all sheets in workbook
@@ -28,11 +28,10 @@ Range("L1").Value = "Total Volume"
 Range("I1:L1").ColumnWidth = 15
 
 'Declare variables needed for calculations and looping
-Dim totalcount As Integer
+Dim totalcount As Long
 Dim lastrow As Long
 Dim currticker As String
 Dim nextticker As String
-Dim currtickercount As Integer
 Dim currtickernumber As Integer
 Dim currtickeropen As Double
 Dim currtickerclose As Double
@@ -43,7 +42,6 @@ Dim quarterlypercentchange As Double
 'Set initial values for all counters
 totalcount = 2
 lastrow = Cells(Rows.count, 1).End(xlUp).Row
-currtickercount = 2
 currtickernumber = 2
 
 'Set initial open value
